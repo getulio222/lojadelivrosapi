@@ -2,6 +2,7 @@ package com.lojasdelivros.entity.autores;
 
 import java.util.List;
 
+import com.lojasdelivros.entity.auditorias.Auditoria;
 import com.lojasdelivros.entity.livros.Livro;
 
 import jakarta.persistence.Column;
@@ -15,7 +16,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Autor {
+public class Autor extends Auditoria {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)

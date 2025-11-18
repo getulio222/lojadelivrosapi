@@ -1,5 +1,6 @@
 package com.lojasdelivros.entity.livros;
 
+import com.lojasdelivros.entity.auditorias.Auditoria;
 import com.lojasdelivros.entity.autores.Autor;
 import com.lojasdelivros.entity.editoras.Editora;
 import com.lojasdelivros.usuarios.Usuario;
@@ -18,7 +19,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Livro { //Entidade Principal(Pai) que vai se relacionar com as demais. 1 para N
+public class Livro extends Auditoria{ //Entidade Principal(Pai) que vai se relacionar com as demais. 1 para N
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

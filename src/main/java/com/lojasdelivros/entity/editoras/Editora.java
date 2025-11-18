@@ -3,6 +3,7 @@ package com.lojasdelivros.entity.editoras;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.lojasdelivros.entity.auditorias.Auditoria;
 import com.lojasdelivros.entity.livros.Livro;
 
 import jakarta.persistence.Column;
@@ -14,7 +15,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 @Entity
-public class Editora {
+public class Editora extends Auditoria{
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
