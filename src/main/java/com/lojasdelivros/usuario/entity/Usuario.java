@@ -1,11 +1,11 @@
-package com.lojasdelivros.usuarios;
+package com.lojasdelivros.usuario.entity;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import com.lojasdelivros.entity.auditorias.Auditoria;
-import com.lojasdelivros.entity.livros.Livro;
+import com.lojasdelivros.entity.Auditoria;
 import com.lojasdelivros.enums.Genero;
+import com.lojasdelivros.livro.entity.Livro;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -22,7 +22,7 @@ public class Usuario extends Auditoria {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 
 	@Column(nullable = false)
 	private String nome;

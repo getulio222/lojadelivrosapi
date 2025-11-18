@@ -1,9 +1,9 @@
-package com.lojasdelivros.entity.autores;
+package com.lojasdelivros.autor.entity;
 
 import java.util.List;
 
-import com.lojasdelivros.entity.auditorias.Auditoria;
-import com.lojasdelivros.entity.livros.Livro;
+import com.lojasdelivros.entity.Auditoria;
+import com.lojasdelivros.livro.entity.Livro;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,7 +20,7 @@ public class Autor extends Auditoria {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-private long id;
+private Long id;
 
 @Column(nullable = false, unique = true)
 private String nome;

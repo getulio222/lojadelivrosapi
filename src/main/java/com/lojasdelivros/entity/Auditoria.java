@@ -1,4 +1,4 @@
-package com.lojasdelivros.entity.auditorias;
+package com.lojasdelivros.entity;
 
 import java.time.LocalDateTime;
 

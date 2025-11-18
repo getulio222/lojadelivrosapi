@@ -1,9 +1,9 @@
-package com.lojasdelivros.entity.livros;
+package com.lojasdelivros.livro.entity;
 
-import com.lojasdelivros.entity.auditorias.Auditoria;
-import com.lojasdelivros.entity.autores.Autor;
-import com.lojasdelivros.entity.editoras.Editora;
-import com.lojasdelivros.usuarios.Usuario;
+import com.lojasdelivros.autor.entity.Autor;
+import com.lojasdelivros.editora.entity.Editora;
+import com.lojasdelivros.entity.Auditoria;
+import com.lojasdelivros.usuario.entity.Usuario;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -23,7 +23,7 @@ public class Livro extends Auditoria{ //Entidade Principal(Pai) que vai se relac
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	@Column(nullable = false, length = 100)
 	private String nome;

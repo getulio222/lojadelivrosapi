@@ -1,10 +1,10 @@
-package com.lojasdelivros.entity.editoras;
+package com.lojasdelivros.editora.entity;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import com.lojasdelivros.entity.auditorias.Auditoria;
-import com.lojasdelivros.entity.livros.Livro;
+import com.lojasdelivros.entity.Auditoria;
+import com.lojasdelivros.livro.entity.Livro;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
